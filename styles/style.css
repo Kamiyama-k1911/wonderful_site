@@ -1,0 +1,76 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: "小塚ゴシック Pro", 游ゴシック, Meiryo, sans-serif;
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+}
+
+.background {
+  padding-top: 160px;
+  background-image: url("../img/head_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  width: 94%;
+  margin: 0 auto;
+}
+
+.wonderful-box {
+  padding: 2em 1em;
+  margin: 0 auto 2em;
+  text-align: center;
+  background-color: white;
+  max-width: 700px;
+  width: 100%;
+  border: 6px solid black;
+  border-radius: 20px;
+  line-height: 1.8;
+}
+
+.wonderful-box__header h1 {
+  font-size: 38px;
+  margin: 0;
+  line-height: 1;
+}
+
+.wonderful-box__header p {
+  margin-top: 0;
+}
+
+.wonderful-box__body p {
+  margin: 0 0 10px;
+  line-height: 1.7;
+  font-size: 22px;
+}
+
+.wonderful-box__body .body-strong {
+  line-height: 1.2;
+  font-size: 24px;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, yellow));
+  background: linear-gradient(transparent 60%, yellow 60%);
+}
+
+.wonderful-box__body .apply-button {
+  display: block;
+  background-color: #009bcf;
+  color: white;
+  padding: 1em 1em;
+  margin: 1em 3em 0 3em;
+  border-radius: 4px;
+  max-width: 560px;
+  width: 94%;
+}
+
+.wonderful-box__body .warning {
+  font-size: 0.8em;
+}
+/*# sourceMappingURL=style.css.map */
