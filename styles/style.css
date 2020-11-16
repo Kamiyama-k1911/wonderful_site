@@ -17,6 +17,11 @@ a {
   width: 100%;
 }
 
+.background-sub {
+  background-color: black;
+  padding: 0 0 3em 0;
+}
+
 .container {
   max-width: 1100px;
   width: 94%;
@@ -72,5 +77,25 @@ a {
 
 .wonderful-box__body .warning {
   font-size: 0.8em;
+}
+
+.wonderful-description {
+  color: white;
+  max-width: 800px;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+
+.wonderful-description h2 {
+  font-size: 26px;
+  font-weight: normal;
+  border-bottom: 1px solid white;
+  padding: 0 0 0.2em;
+  margin: 0 0 0.5em;
+}
+
+.wonderful-description p {
+  margin: 0 0 10px;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
