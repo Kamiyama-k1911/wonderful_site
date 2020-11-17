@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "小塚ゴシック Pro", 游ゴシック, Meiryo, sans-serif;
-  line-height: 1.8;
+  box-sizing: border-box;
 }
 
 a {
@@ -28,7 +28,7 @@ h1,
 
 .background-sub {
   background-color: black;
-  padding: 0 0 3em 0;
+  padding: 140px 0 3em 0;
 }
 
 .container {
@@ -49,7 +49,7 @@ h1,
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 0 15px;
+  padding: 0 30px;
   &__logo {
     h1 {
       margin: 0;
@@ -77,6 +77,9 @@ h1,
     margin: 2em 0;
     box-sizing: border-box;
     vertical-align: middle;
+    &:hover {
+      background-color: #a1a1a1 !important;
+    }
 
     .button-text {
       color: #ffffff;
@@ -121,7 +124,7 @@ h1,
 .wonderful-box {
   box-sizing: border-box;
   padding: 2em 1em;
-  margin: 0 auto;
+  margin: 10px auto 2em auto;
   text-align: center;
   background-color: white;
   max-width: 700px;
@@ -161,6 +164,9 @@ h1,
       margin: 1em 3em 0 3em;
       border-radius: 4px;
       max-width: 560px;
+      &:hover {
+        opacity: 0.7;
+      }
     }
     .warning {
       font-size: 0.8em;
@@ -183,6 +189,27 @@ h1,
   p {
     margin: 0 0 10px;
     text-align: left;
+  }
+}
+
+.wonderful-contents {
+  box-sizing: border-box;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 150px -80px 150px;
+  &__item {
+    img {
+      height: auto;
+      display: inline-block;
+      height: 256px;
+      width: 256px;
+    }
+    span {
+      display: block;
+      text-align: center;
+      color: white;
+    }
   }
 }
 
@@ -214,19 +241,55 @@ h1,
     }
     &__body {
       p {
-        font-size: 2em;
+        font-size: 2.5em;
       }
       .body-strong {
-        font-size: 2em;
+        font-size: 2.5em;
       }
       .apply-button {
-        font-size: 2em;
+        font-size: 2.5em;
         max-width: 80%;
-        margin: 1em 1em 0 1em;
+        margin: 1em auto 0.5em auto;
+        padding: 20px 10px;
       }
       .warning {
-        font-size: 1em;
+        font-size: 1.25em;
       }
+    }
+  }
+
+  .wonderful-contents {
+    flex-direction: column;
+    align-items: center;
+    margin: 200px 0 5em 0;
+
+    &__item {
+      margin-bottom: 30px;
+      img,
+      span {
+        font-size: 2em;
+      }
+      img {
+        margin: 0 auto;
+        height: auto;
+        display: block;
+        width: 312px;
+      }
+    }
+  }
+  .background-sub {
+    margin-top: -1400px;
+    padding-top: 1400px;
+  }
+
+  .wonderful-description {
+    h2 {
+      font-size: 2.5em;
+      padding: 0;
+    }
+    p {
+      font-size: 2em;
+      line-height: 1.8;
     }
   }
 }
