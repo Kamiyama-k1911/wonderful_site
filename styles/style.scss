@@ -44,16 +44,22 @@ h1,
   top: 0;
 }
 .header {
+  height: 124px;
   max-width: 1080px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
+  padding: 0 15px;
   &__logo {
+    h1 {
+      margin: 0;
+    }
   }
   &__list {
     padding: 0 30px;
     display: flex;
     li {
-      margin: 34px 0 0;
+      // margin: 34px 0 0;
       white-space: nowrap;
     }
     a {
@@ -63,31 +69,51 @@ h1,
     }
   }
   &__button {
-    a {
-      display: block;
-      position: relative;
-      background-color: #f5b92f;
-      font-weight: 700;
-      padding: 14px 20px 12px;
-      margin: 32px 0;
+    display: inline-block;
+    position: relative;
+    background-color: #f5b92f;
+    font-weight: 700;
+    padding: 14px 20px 12px;
+    margin: 2em 0;
+    box-sizing: border-box;
+    vertical-align: middle;
 
-      .button-text {
-        color: #ffffff;
-        white-space: nowrap;
-        margin-right: 25px;
-      }
-      .button-arrow {
-        position: absolute;
-        top: 50%;
-        margin-top: -8px;
-        right: 20px;
-        display: inline-block;
-        border-top: solid 2px #ffffff;
-        border-right: solid 2px #ffffff;
-        width: 16px;
-        height: 16px;
-        transform: rotate(45deg);
-      }
+    .button-text {
+      color: #ffffff;
+      white-space: nowrap;
+      margin-right: 25px;
+    }
+    .button-arrow {
+      position: absolute;
+      top: 50%;
+      margin-top: -8px;
+      right: 20px;
+      display: block;
+      border-top: solid 2px #ffffff;
+      border-right: solid 2px #ffffff;
+      width: 14px;
+      height: 14px;
+      transform: rotate(45deg);
+    }
+  }
+  &__responsive {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 15px;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+    &:hover {
+      background-color: #ddd;
+    }
+    .menu-parts {
+      display: block;
+      background-color: #797474;
+      width: 24px;
+      height: 2px;
+      margin: 2px;
+      text-align: center;
     }
   }
 }
@@ -158,5 +184,20 @@ h1,
   p {
     margin: 0 0 10px;
     text-align: left;
+  }
+}
+
+/*レスポンシブデザイン*/
+@media screen and (max-width: 960px) {
+  .header {
+    height: 90px;
+    justify-content: space-between;
+    &__list,
+    &__button {
+      display: none;
+    }
+    &__responsive {
+      display: flex;
+    }
   }
 }

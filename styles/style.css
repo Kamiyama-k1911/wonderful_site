@@ -46,11 +46,20 @@ h1,
 }
 
 .header {
+  height: 124px;
   max-width: 1080px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+}
+
+.header__logo h1 {
+  margin: 0;
 }
 
 .header__list {
@@ -61,7 +70,6 @@ h1,
 }
 
 .header__list li {
-  margin: 34px 0 0;
   white-space: nowrap;
 }
 
@@ -71,33 +79,64 @@ h1,
   color: #000000;
 }
 
-.header__button a {
-  display: block;
+.header__button {
+  display: inline-block;
   position: relative;
   background-color: #f5b92f;
   font-weight: 700;
   padding: 14px 20px 12px;
-  margin: 32px 0;
+  margin: 2em 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: middle;
 }
 
-.header__button a .button-text {
+.header__button .button-text {
   color: #ffffff;
   white-space: nowrap;
   margin-right: 25px;
 }
 
-.header__button a .button-arrow {
+.header__button .button-arrow {
   position: absolute;
   top: 50%;
   margin-top: -8px;
   right: 20px;
-  display: inline-block;
+  display: block;
   border-top: solid 2px #ffffff;
   border-right: solid 2px #ffffff;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+.header__responsive {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 15px;
+  height: 20px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.header__responsive:hover {
+  background-color: #ddd;
+}
+
+.header__responsive .menu-parts {
+  display: block;
+  background-color: #797474;
+  width: 24px;
+  height: 2px;
+  margin: 2px;
+  text-align: center;
 }
 
 .wonderful-box {
@@ -171,5 +210,23 @@ h1,
 .wonderful-description p {
   margin: 0 0 10px;
   text-align: left;
+}
+
+/*レスポンシブデザイン*/
+@media screen and (max-width: 960px) {
+  .header {
+    height: 90px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__list, .header__button {
+    display: none;
+  }
+  .header__responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=style.css.map */
