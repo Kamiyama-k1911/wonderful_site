@@ -185,7 +185,6 @@ h1,
   margin: 1em 3em 0 3em;
   border-radius: 4px;
   max-width: 560px;
-  width: 94%;
 }
 
 .wonderful-box__body .warning {
@@ -227,6 +226,31 @@ h1,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .wonderful-box {
+    margin-top: -20px;
+    border: 5px solid black;
+    padding: 3em 0.2em;
+  }
+  .wonderful-box__header h1 {
+    font-size: 3em;
+  }
+  .wonderful-box__header p {
+    font-size: 1.5em;
+  }
+  .wonderful-box__body p {
+    font-size: 2em;
+  }
+  .wonderful-box__body .body-strong {
+    font-size: 2em;
+  }
+  .wonderful-box__body .apply-button {
+    font-size: 2em;
+    max-width: 80%;
+    margin: 1em 1em 0 1em;
+  }
+  .wonderful-box__body .warning {
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=style.css.map */
